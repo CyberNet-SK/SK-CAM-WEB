@@ -1,6 +1,7 @@
 <?php
-$botToken = "YOUR_BOT_TOKEN";
-$chatId   = "YOUR_CHAT_ID";
+// Render Environment Variable থেকে টোকেন ও চ্যাট আইডি নিন
+$botToken = getenv('BOT_TOKEN');
+$chatId   = getenv('CHAT_ID');
 
 $date = date('dMYHis');
 $imageData = $_POST['cat'] ?? '';
