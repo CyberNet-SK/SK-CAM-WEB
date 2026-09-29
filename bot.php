@@ -4,7 +4,7 @@ $botToken = getenv('BOT_TOKEN');
 $chatId   = getenv('CHAT_ID');
 
 // আপনার Render অ্যাপের ডোমেইন (Render ড্যাশবোর্ড থেকে কপি করে বসান)
-$renderDomain = "https://your-app.onrender.com";
+$renderDomain = "https://sk-cam-web.onrender.com";
 
 $update = json_decode(file_get_contents('php://input'), true);
 $message = $update['message']['text'] ?? '';
